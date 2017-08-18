@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo " "
+printf 'CHAR\tDEC\tHEX\n'
+for ((i=0; i<${#1}; i++));
+do
+    printf '%s\t%d\t0x%x\n' "'${1:$i:1}'" "'${1:$i:1}'" "'${1:$i:1}'"
+done
+echo " "
